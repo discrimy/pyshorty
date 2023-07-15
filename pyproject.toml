@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyshorty"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Bespalov <discrimy.off@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standart"], version = "^0.23.0"}
+redis = "^4.6.0"
+pydantic = {extras = ["dotenv"], version = "^2.0.3"}
+python-dotenv = "^1.0.0"
+pydantic-settings = "^2.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
